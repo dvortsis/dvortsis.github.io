@@ -16,10 +16,11 @@
 <link rel="icon" href="/assets/brand/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
-<link rel="preload" href="/assets/hero/mountains-desktop.svg" as="image" media="(min-width:1024px)">
-<link rel="stylesheet" href="/styles/site.css">
+<link rel="preload" href="/assets/hero/atmosphere-hd.webp" as="image" fetchpriority="high">
+<link rel="preload" href="/assets/fonts/newsreader.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/styles/site.css"><link rel="stylesheet" href="/styles/editorial.css">
 <script>document.documentElement.classList.add('js')</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfilePage","url":"https://www.dvortsis.com/","mainEntity":{"@type":"Person","name":"Benjamin Dvortsis","email":"ben@dvortsis.com","jobTitle":"Technical Manager, Analytics & BI, Revenue Operations","sameAs":["https://github.com/dvortsis","https://www.linkedin.com/in/dvortsis","https://public.tableau.com/app/profile/benjamin.dvortsis"]}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfilePage","url":"https://www.dvortsis.com/","mainEntity":{"@type":"Person","name":"Benjamin Dvortsis","email":"ben@dvortsis.com","jobTitle":"Technical Manager, Analytics & BI, Revenue Operations","sameAs":["https://github.com/dvortsis","https://www.linkedin.com/in/dvortsis","https://public.tableau.com/app/profile/benjamin.dvortsis/vizzes"]}}</script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -27,7 +28,7 @@
 <nav class="shell nav" aria-label="Primary">
 <a class="brand" href="#top" aria-label="Benjamin Dvortsis, home">
 <img src="/assets/brand/monogram-white.svg" alt="" width="42" height="42">
-<span>Benjamin Dvortsis</span>
+<span>dvortsis.com</span>
 </a>
 <button class="menu" aria-expanded="false" aria-controls="navlinks">
 <span class="sr-only">Open navigation</span>
@@ -40,7 +41,7 @@
 <a href="#impact">Impact</a>
 <a href="#work">Work</a>
 <a href="#builds">Builds</a>
-<a href="/tableau/">Tableau</a>
+<a href="https://public.tableau.com/app/profile/benjamin.dvortsis/vizzes" target="_blank" rel="noopener">Tableau</a>
 <a href="#experience">Experience</a>
 <a href="#about">About</a>
 <a href="#contact">Contact</a>
@@ -52,29 +53,26 @@
 <main id="main">
 <section class="hero" id="top">
 <picture class="hero-bg" aria-hidden="true">
-<source media="(max-width:640px)" srcset="/assets/hero/mountains-mobile.svg">
-<source media="(max-width:1023px)" srcset="/assets/hero/mountains-tablet.svg">
-<img src="/assets/hero/mountains-desktop.svg" alt="">
+<source media="(max-width:640px)" srcset="/assets/hero/atmosphere-hd.webp">
+<source media="(max-width:1023px)" srcset="/assets/hero/atmosphere-hd.webp">
+<img fetchpriority="high" src="/assets/hero/atmosphere-hd.webp" alt="" width="1660" height="948">
 </picture>
-<div class="hero-grid" aria-hidden="true">
-</div>
+
 <div class="shell hero-inner">
 <div class="hero-copy reveal">
 <p class="eyebrow">Healthcare analytics / Data architecture / Applied AI</p>
-<h1>Turning healthcare data into <em>what’s next.</em>
+<h1>Turning healthcare<br>data into<br><em>what’s next.</em>
 </h1>
 <p class="supporting">I build data systems that make complex operations easier to run.</p>
 <p class="intro">Healthcare analytics and AI leader with 10+ years turning fragmented clinical and operational data into governed, decision-ready intelligence.</p>
 <div class="actions">
-<a class="button primary" href="#work">View my work <img src="/assets/icons/arrow-right.svg" alt="">
+<a class="button primary" href="#work">View my work <img src="/assets/icons/arrow-up-right.svg" alt="">
 </a>
 <a class="button secondary" href="/assets/Benjamin-Dvortsis-Resume.pdf" download>Résumé <img src="/assets/icons/download.svg" alt="">
 </a>
 </div>
 </div>
-<div class="system-map reveal" aria-hidden="true">
-<img src="/assets/hero/governed-flow.svg" alt="" width="720" height="620">
-</div>
+<div class="hero-art-space" aria-hidden="true"><span>People / Systems / Better care</span></div>
 </div>
 <div class="shell hero-foot">
 <span>Denver, Colorado</span>
@@ -154,104 +152,31 @@
 <div class="shell">
 <div class="section-lead reveal">
 <p class="label">Enterprise impact</p>
-<h2>Complex systems. <em>Clear outcomes.</em>
+<h2>From complex data<br>to <em>healthier tomorrows.</em>
 </h2>
 <p>Selected healthcare work, presented without patient data, proprietary logic, or internal employer material.</p>
 </div>
-<div class="cases">
-<article class="case reveal">
-<div class="case-no">01 / Analytics modernization</div>
-<div class="case-copy">
-<h3>Turning a report estate into a product portfolio.</h3>
-<div class="cso">
-<div>
-<b>Challenge</b>
-<p>More than 500 legacy reports across a $13.6B revenue-cycle scope.</p>
-</div>
-<div>
-<b>System</b>
-<p>Four concurrent cross-functional teams, governed definitions, and a rationalized delivery model.</p>
-</div>
-<div>
-<b>Outcome</b>
-<p>$300K–$540K in projected annual labor savings.</p>
-</div>
-</div>
-</div>
-<div class="case-art" aria-hidden="true">
-<img src="/assets/cases/modernization.svg" alt="" width="420" height="300" loading="lazy">
-</div>
-</article>
-<article class="case reveal">
-<div class="case-no">02 / Athena to Epic</div>
-<div class="case-copy">
-<h3>Moving revenue-critical reporting without missing a beat.</h3>
-<div class="cso">
-<div>
-<b>Challenge</b>
-<p>Migrate clinical and financial reporting with no room for disruption.</p>
-</div>
-<div>
-<b>System</b>
-<p>Mapped and validated 120 critical tables from Athena to Epic.</p>
-</div>
-<div>
-<b>Outcome</b>
-<p>99.9% uptime and zero disruption to a $150M+ revenue cycle.</p>
-</div>
-</div>
-</div>
-<div class="case-art" aria-hidden="true">
-<img src="/assets/cases/migration.svg" alt="" width="420" height="300" loading="lazy">
-</div>
-</article>
-<article class="case reveal">
-<div class="case-no">03 / Automation</div>
-<div class="case-copy">
-<h3>Building time back into the operation.</h3>
-<div class="cso">
-<div>
-<b>Challenge</b>
-<p>Manual production of 35 weekly operational reports.</p>
-</div>
-<div>
-<b>System</b>
-<p>Reliable pipelines and a rebuilt month-end workflow.</p>
-</div>
-<div>
-<b>Outcome</b>
-<p>80% faster month-end close and ~1,500 hours reclaimed each year.</p>
-</div>
-</div>
-</div>
-<div class="case-art" aria-hidden="true">
-<img src="/assets/cases/automation.svg" alt="" width="420" height="300" loading="lazy">
-</div>
-</article>
-<article class="case reveal">
-<div class="case-no">04 / Data foundation</div>
-<div class="case-copy">
-<h3>Answers while they still matter.</h3>
-<div class="cso">
-<div>
-<b>Challenge</b>
-<p>High-volume healthcare data spread across disconnected systems.</p>
-</div>
-<div>
-<b>System</b>
-<p>A governed warehouse handling 2TB+ each month and 500M+ rows.</p>
-</div>
-<div>
-<b>Outcome</b>
-<p>Queries under five seconds with 99.8% automated pipeline success.</p>
-</div>
-</div>
-</div>
-<div class="case-art" aria-hidden="true">
-<img src="/assets/cases/foundation.svg" alt="" width="420" height="300" loading="lazy">
-</div>
-</article>
-</div>
+<div class="cases"><article class="case reveal">
+<p class="case-no">01 / Analytics modernization</p>
+<div class="case-copy"><h3>Enterprise Analytics<br>Modernization</h3><p>From a fragmented report estate to governed definitions and a rationalized delivery model. Four concurrent cross-functional teams; $300K–$540K in projected annual labor savings.</p></div>
+<div class="case-art" aria-hidden="true"><img src="/assets/cases/modernization-hd.webp" alt="" loading="lazy" width="1254" height="1254"></div>
+<div class="case-metrics"><div><strong>500+</strong><span>reports rationalized</span></div><div><strong>4</strong><span>cross-functional teams</span></div><div><strong>$13.6B</strong><span>revenue cycle supported</span></div></div>
+</article><article class="case reveal">
+<p class="case-no">02 / Athena to Epic</p>
+<div class="case-copy"><h3>Revenue-Critical<br>EMR Migration</h3><p>Mapped and validated clinical and financial reporting from Athena to Epic, preserving business continuity with zero revenue-cycle disruption.</p></div>
+<div class="case-art" aria-hidden="true"><img src="/assets/cases/migration-hd.webp" alt="" loading="lazy" width="1254" height="1254"></div>
+<div class="case-metrics"><div><strong>120</strong><span>critical tables migrated</span></div><div><strong>99.9%</strong><span>uptime</span></div><div><strong>$150M+</strong><span>revenue cycle supported</span></div></div>
+</article><article class="case reveal">
+<p class="case-no">03 / Automation</p>
+<div class="case-copy"><h3>Automation<br>at Scale</h3><p>Reliable pipelines for weekly operational reports and a rebuilt month-end workflow, giving teams time back for higher-value work.</p></div>
+<div class="case-art" aria-hidden="true"><img src="/assets/cases/automation-hd.webp" alt="" loading="lazy" width="1254" height="1254"></div>
+<div class="case-metrics"><div><strong>35</strong><span>weekly reports automated</span></div><div><strong>80%</strong><span>faster month-end close</span></div><div><strong>~1,500</strong><span>hours reclaimed yearly</span></div></div>
+</article><article class="case reveal">
+<p class="case-no">04 / Data architecture</p>
+<div class="case-copy"><h3>Foundational<br>Data Architecture</h3><p>A governed warehouse for high-volume healthcare data, built for reliable processing and answers while they still matter.</p></div>
+<div class="case-art" aria-hidden="true"><img src="/assets/cases/foundation-hd.webp" alt="" loading="lazy" width="1254" height="1254"></div>
+<div class="case-metrics"><div><strong>500M+</strong><span>rows centralized</span></div><div><strong>2TB+</strong><span>monthly data</span></div><div><strong>&lt;5s</strong><span>query response</span></div><div><strong>99.8%</strong><span>pipeline success</span></div></div>
+</article></div>
 <p class="confidential">All results are presented at portfolio level. No PHI, patient data, private screenshots, or proprietary employer artifacts appear on this site.</p>
 </div>
 </section>
@@ -265,7 +190,7 @@
 <div class="build-grid">
 <a class="build reveal" href="https://github.com/dvortsis/ajazz-companion-bridge" target="_blank" rel="noopener">
 <div class="shot">
-<img src="/assets/projects/ajazz/hardware.webp" width="1200" height="675" alt="Ajazz Companion Bridge running with an LCD macro pad and Windows tray interface">
+<img src="/assets/projects/ajazz/hardware-hd.webp" alt="Actual Ajazz Companion Bridge repository screenshot" loading="lazy" width="1826" height="770">
 </div>
 <div class="build-copy">
 <p class="tag">Open source / JavaScript</p>
@@ -284,7 +209,7 @@
 </a>
 <a class="build reveal" href="https://github.com/dvortsis/lodestar" target="_blank" rel="noopener">
 <div class="shot">
-<img src="/assets/projects/lodestar/screen.webp" width="1200" height="675" alt="Lodestar search interface showing ranked Bitmagnet discovery results" loading="lazy">
+<img src="/assets/projects/lodestar/screen-hd.webp" alt="Lodestar search interface showing ranked Bitmagnet discovery results" loading="lazy" width="1360" height="915">
 </div>
 <div class="build-copy">
 <p class="tag">Open source / TypeScript</p>
@@ -300,9 +225,11 @@
 </ul>
 </div>
 </a>
-<article class="build reveal">
+<a class="build reveal tableau-build" href="https://public.tableau.com/app/profile/benjamin.dvortsis/viz/FraudDashboards/BenfordsLawDashboard" target="_blank" rel="noopener">
+<div class="shot"><img src="/assets/tableau/benford-hd.webp" loading="lazy" alt="Actual Benford’s Law Tableau dashboard showing first-digit distribution analysis" width="1199" height="826"></div>
+<div class="build-copy"><p class="tag">Analytics / Data science</p><h3>Benford’s Law <img src="/assets/icons/arrow-up-right.svg" alt=""></h3><p>First-digit distributions made visible for fraud and anomaly exploration.</p><ul><li>Fraud & anomaly detection</li><li>First-digit analysis</li><li>Interactive Tableau workbook</li></ul></div></a><article class="build reveal role-build">
 <div class="shot">
-<img src="/assets/projects/roledaemon/product.svg" width="900" height="520" alt="RoleDaemon role intelligence interface concept" loading="lazy">
+<img src="/assets/projects/roledaemon/mascot.webp" alt="RoleDaemon blue mascot from the supplied brand action sheet" loading="lazy" width="600" height="600">
 </div>
 <div class="build-copy">
 <p class="tag">Personal product / In active development</p>
@@ -317,23 +244,9 @@
 </ul>
 </div>
 </article>
-<a class="build compact reveal" href="https://github.com/dvortsis/unraid-templates" target="_blank" rel="noopener">
-<div class="infra-mark" aria-hidden="true">
-<i>
-</i>
-<i>
-</i>
-<i>
-</i>
+
 </div>
-<div class="build-copy">
-<p class="tag">Open source / Infrastructure</p>
-<h3>Unraid Templates <img src="/assets/icons/arrow-up-right.svg" alt="">
-</h3>
-<p>Community Applications templates for repeatable custom Docker deployments.</p>
-</div>
-</a>
-</div>
+<p class="supporting-project">Also building <a class="text-link" href="https://github.com/dvortsis/unraid-templates">Unraid Templates <img src="/assets/icons/arrow-up-right.svg" alt=""></a></p>
 </section>
 <section class="section tableau-preview">
 <div class="shell">
@@ -344,7 +257,7 @@
 <p>Four public Tableau projects spanning fraud detection, clinical capacity, business simulation, and an interactive résumé.</p>
 </div>
 <div class="viz-feature reveal">
-<img src="/assets/tableau/benford.webp" alt="Benford's Law Fraud and Anomaly Detection Tableau dashboard" width="900" height="555" loading="lazy">
+<img src="/assets/tableau/benford-hd.webp" alt="Benford's Law Fraud and Anomaly Detection Tableau dashboard" loading="lazy" width="1199" height="826">
 <div>
 <p class="tag">Featured visualization</p>
 <h3>Benford's Law Fraud & Anomaly Detection</h3>
@@ -355,19 +268,19 @@
 </div>
 <div class="viz-row">
 <a href="https://public.tableau.com/app/profile/benjamin.dvortsis/viz/PioneerAnalytics/LaborHoursperTreatment" target="_blank" rel="noopener">
-<img src="/assets/tableau/clinical-labor.webp" alt="Clinical Labor and Capacity Optimization dashboard" loading="lazy">
+<img src="/assets/tableau/clinical-labor-hd.webp" alt="Clinical Labor and Capacity Optimization dashboard" loading="lazy" width="1199" height="826">
 <span>Clinical Labor & Capacity Optimization</span>
 </a>
 <a href="https://public.tableau.com/app/profile/benjamin.dvortsis/viz/CapstoneSimulationIntelligenceDashboards/BusinessIntelligenceDashboards" target="_blank" rel="noopener">
-<img src="/assets/tableau/capsim.webp" alt="Competitive Market Simulation dashboard" loading="lazy">
+<img src="/assets/tableau/capsim-hd.webp" alt="Competitive Market Simulation dashboard" loading="lazy" width="1199" height="826">
 <span>Competitive Market Simulation (Capsim)</span>
 </a>
 <a href="https://public.tableau.com/app/profile/benjamin.dvortsis/viz/BenjaminDvortsisResumeDash/ResumeofBenjaminDvortsis" target="_blank" rel="noopener">
-<img src="/assets/tableau/resume.webp" alt="Benjamin Dvortsis interactive resume dashboard" loading="lazy">
+<img src="/assets/tableau/resume-hd.webp" alt="Benjamin Dvortsis interactive resume dashboard" loading="lazy" width="1399" height="826">
 <span>Benjamin Dvortsis' Resume Dash</span>
 </a>
 </div>
-<a class="button secondary gallery-cta" href="/tableau/">Explore all visualizations <img src="/assets/icons/arrow-right.svg" alt="">
+<a class="button secondary gallery-cta" href="/tableau/">Explore all visualizations <img src="/assets/icons/arrow-up-right.svg" alt="">
 </a>
 </div>
 </section>
@@ -457,10 +370,7 @@
 </div>
 </section>
 <section class="about" id="about">
-<picture aria-hidden="true">
-<source media="(max-width:640px)" srcset="/assets/hero/mountains-mobile.svg">
-<img src="/assets/hero/mountains-desktop.svg" alt="" loading="lazy">
-</picture>
+<picture aria-hidden="true"><img src="/assets/hero/about-hd.webp" alt="" loading="lazy" width="1731" height="909"></picture>
 <div class="shell about-inner reveal">
 <p class="label">Beyond the work</p>
 <h2>Builder by <em>habit.</em>
@@ -478,9 +388,9 @@
 <a class="email" href="mailto:ben@dvortsis.com">ben@dvortsis.com <img src="/assets/icons/arrow-up-right.svg" alt="">
 </a>
 <div class="contact-links">
-<a href="https://www.linkedin.com/in/dvortsis" target="_blank" rel="noopener">LinkedIn</a>
-<a href="https://github.com/dvortsis" target="_blank" rel="noopener">GitHub</a>
-<a href="https://public.tableau.com/app/profile/benjamin.dvortsis/vizzes" target="_blank" rel="noopener">Tableau</a>
+<a href="https://www.linkedin.com/in/dvortsis" target="_blank" rel="noopener"><img src="/assets/icons/linkedin.svg" alt="">LinkedIn</a>
+<a href="https://github.com/dvortsis" target="_blank" rel="noopener"><img src="/assets/icons/github.svg" alt="">GitHub</a>
+<a href="https://public.tableau.com/app/profile/benjamin.dvortsis/vizzes" target="_blank" rel="noopener"><img src="/assets/icons/tableau.svg" alt="">Tableau</a>
 </div>
 </div>
 </section>
@@ -493,7 +403,9 @@
 </p>
 </div>
 </footer>
-<script src="/scripts/site.js" defer>
+<script src="/scripts/site-v2.js" defer>
 </script>
 </body>
 </html>
+
+
