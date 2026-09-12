@@ -1,17 +1,5 @@
-# Benjamin Dvortsis portfolio
+# Benjamin Dvortsis
 
-The source for [www.dvortsis.com](https://www.dvortsis.com), published with GitHub Pages.
+Production source for [www.dvortsis.com](https://www.dvortsis.com).
 
-## Local preview
-
-From this directory, run a small static server:
-
-```powershell
-npx serve .
-```
-
-Then open the local address shown in the terminal.
-
-## Publishing
-
-The site is designed to publish from the root of the `main` branch in the `dvortsis/dvortsis.github.io` repository. The `CNAME` file prepares the project for `www.dvortsis.com`. DNS should only be changed after the GitHub Pages preview has been checked.
+This is a dependency-free static site. Run `python -m http.server 8000` from the repository root for a local preview. GitHub Pages deploys the root of `main`.
