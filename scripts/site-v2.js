@@ -26,3 +26,22 @@ matchMedia('(min-width:1024px)').addEventListener('change', e => {
 });
 const year = document.querySelector('[data-year]');
 if (year) year.textContent = new Date().getFullYear();
+
+// Fallback IntersectionObserver for scroll reveals (Safari, Firefox)
+if (!CSS.supports('(animation-timeline: view()) and (animation-range: entry)')) {
+  const revealObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    rootMargin: '0px 0px -60px 0px',
+    threshold: 0
+  });
+
+  document.querySelectorAll('.reveal').forEach(el => {
+    revealObserver.observe(el);
+  });
+}
