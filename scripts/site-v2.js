@@ -61,3 +61,24 @@ if (operatingModel) {
     operatingObserver.observe(operatingModel);
   }
 }
+
+// Persistent process motion runs only while a study is visible.
+const processStudies = document.querySelectorAll('.process-study');
+const processMotion = matchMedia('(prefers-reduced-motion: reduce)');
+const visibleStudies = new Set();
+function syncProcessMotion() {
+  processStudies.forEach(study => study.classList.toggle('process-running',
+    visibleStudies.has(study) && !processMotion.matches && !document.hidden));
+}
+if ('IntersectionObserver' in window) {
+  const processObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) visibleStudies.add(entry.target);
+      else visibleStudies.delete(entry.target);
+    });
+    syncProcessMotion();
+  }, { threshold: 0.15 });
+  processStudies.forEach(study => processObserver.observe(study));
+}
+processMotion.addEventListener('change', syncProcessMotion);
+document.addEventListener('visibilitychange', syncProcessMotion);

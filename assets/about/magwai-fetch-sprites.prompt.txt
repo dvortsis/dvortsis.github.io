@@ -1,0 +1,4 @@
+Generated with built-in image_gen using magwai-puppy.png as the character reference.
+Pass 1: Eight-frame 4x2 running sprite sheet, consistent white Maltese puppy, eight changing leg poses, same scale, facing right.
+Pass 2: Preserve top four running poses. Bottom four poses: lower muzzle to yellow tennis ball on ground; close mouth around ball; lift head with gripped ball; carry ball.
+Pass 3 prompt: Change ONLY the background of this exact sprite sheet. Replace EVERY checkerboard background pixel, gray square, white square and faint background mark with perfectly uniform solid midnight navy #081624. NOT transparent, NO checkerboard. Preserve all eight puppies, every fur strand and yellow tennis ball exactly, preserving their positions and exact 4x2 cell grid and image dimensions. The puppy white fur must remain opaque white. All empty space must be uniform #081624. No gradients or texture in the navy background.
