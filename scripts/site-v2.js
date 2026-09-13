@@ -45,3 +45,19 @@ if (!CSS.supports('(animation-timeline: view()) and (animation-range: entry)')) 
     revealObserver.observe(el);
   });
 }
+
+// One quiet, run-once progression for the operating model.
+const operatingModel = document.querySelector('[data-operating-model]');
+if (operatingModel) {
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    operatingModel.classList.add('is-visible');
+  } else {
+    const operatingObserver = new IntersectionObserver((entries, observer) => {
+      if (entries[0]?.isIntersecting) {
+        operatingModel.classList.add('is-visible');
+        observer.disconnect();
+      }
+    }, { threshold: 0.12 });
+    operatingObserver.observe(operatingModel);
+  }
+}

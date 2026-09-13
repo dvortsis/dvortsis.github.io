@@ -16,7 +16,7 @@
 <link rel="icon" href="/assets/brand/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
-<link rel="preload" href="/assets/hero/atmosphere-hd.webp" as="image" fetchpriority="high">
+<link rel="preload" href="/assets/hero/benjamin-mountain-master.png" as="image" fetchpriority="high">
 <link rel="preload" href="/assets/fonts/newsreader.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/styles/site.css"><link rel="stylesheet" href="/styles/editorial.css">
 <script>document.documentElement.classList.add('js')</script>
@@ -28,7 +28,7 @@
 <nav class="shell nav" aria-label="Primary">
 <a class="brand" href="#top" aria-label="Benjamin Dvortsis, home">
 <img src="/assets/brand/monogram-white.svg" alt="" width="42" height="42">
-<span>dvortsis.com</span>
+<span>Benjamin Dvortsis</span>
 </a>
 <button class="menu" aria-expanded="false" aria-controls="navlinks">
 <span class="sr-only">Open navigation</span>
@@ -53,9 +53,7 @@
 <main id="main">
 <section class="hero" id="top">
 <picture class="hero-bg" aria-hidden="true">
-<source media="(max-width:640px)" srcset="/assets/hero/atmosphere-hd.webp">
-<source media="(max-width:1023px)" srcset="/assets/hero/atmosphere-hd.webp">
-<img fetchpriority="high" src="/assets/hero/atmosphere-hd.webp" alt="" width="1660" height="948">
+<img fetchpriority="high" decoding="async" src="/assets/hero/benjamin-mountain-master.png" alt="" width="2048" height="1152">
 </picture>
 
 <div class="shell hero-inner">
@@ -99,56 +97,36 @@
 </article>
 </div>
 </section>
-<section class="section shell">
-<div class="section-lead reveal">
-<p class="label">Operating range</p>
-<h2>Strategy with <em>working parts.</em>
-</h2>
-<p>I lead across the full path from architecture to adoption, then stay close enough to the work to know whether it holds up.</p>
+<section class="section operating-model" id="operating-model">
+<div class="shell">
+<div class="section-lead operating-lead">
+<p class="label">Operating model</p>
+<h2>From architecture <em>to adoption.</em></h2>
+<p>I connect data foundations, intelligent automation, and the teams that turn both into durable operating capability.</p>
 </div>
-<div class="cap-grid">
-<article class="cap reveal">
-<span>01</span>
-<div class="cap-mark">
-<i>
-</i>
-<i>
-</i>
-<b>
-</b>
-</div>
-<h3>Transform</h3>
-<p>Data architecture, BI modernization, governance, semantic modeling, and interoperability.</p>
+<div class="operating-system" data-operating-model>
+<svg class="operating-flow" viewBox="0 0 1200 120" aria-hidden="true" focusable="false">
+<path class="flow-rail" pathLength="1" d="M90 60H1110"/><path class="flow-live" pathLength="1" d="M90 60H1110"/>
+<circle cx="90" cy="60" r="4"/><circle cx="600" cy="60" r="4"/><circle cx="1110" cy="60" r="4"/>
+</svg>
+<div class="operating-stages">
+<article class="op-stage op-transform">
+<div class="op-visual" aria-hidden="true"><svg viewBox="0 0 300 170" focusable="false"><g class="fragment-set"><rect x="18" y="42" width="30" height="42"/><rect x="58" y="24" width="34" height="48"/><rect x="50" y="95" width="42" height="30"/><circle cx="25" cy="119" r="3"/></g><path class="stage-path" pathLength="1" d="M96 84H139"/><g class="governed-form"><path d="M146 45l44-18 50 22v76l-47 18-47-22z"/><path d="M146 45l47 22 47-18M193 67v76M146 84h94"/><circle cx="193" cy="84" r="4"/></g></svg></div>
+<p class="op-index">01 / Foundation</p><h3>Transform</h3><p>Build trustworthy foundations from fragmented systems, definitions, and workflows.</p>
+<ul><li>Architecture</li><li>Governance</li><li>BI modernization</li><li>Interoperability</li></ul>
 </article>
-<article class="cap reveal">
-<span>02</span>
-<div class="cap-mark automate">
-<i>
-</i>
-<i>
-</i>
-<b>
-</b>
-</div>
-<h3>Automate</h3>
-<p>ETL, RPA, applied AI, agents, and workflow systems that give people time back.</p>
+<article class="op-stage op-automate">
+<div class="op-visual" aria-hidden="true"><svg viewBox="0 0 300 170" focusable="false"><path class="automation-route" pathLength="1" d="M26 87H78V48h64v78h62V72h67"/><g class="automation-nodes"><circle cx="26" cy="87" r="5"/><circle cx="78" cy="48" r="5"/><circle cx="142" cy="126" r="5"/><circle cx="204" cy="72" r="5"/><circle cx="271" cy="72" r="5"/></g><path class="state-mark" d="M126 82l12 12 24-28"/></svg></div>
+<p class="op-index">02 / Workflow</p><h3>Automate</h3><p>Turn repetitive work into reliable pipelines, practical AI, and scalable automation.</p>
+<ul><li>ETL</li><li>RPA</li><li>Applied AI</li><li>Agents</li></ul>
 </article>
-<article class="cap reveal">
-<span>03</span>
-<div class="cap-mark lead">
-<i>
-</i>
-<i>
-</i>
-<b>
-</b>
-</div>
-<h3>Lead</h3>
-<p>Team development, operating models, stakeholder alignment, and durable change.</p>
+<article class="op-stage op-lead">
+<div class="op-visual" aria-hidden="true"><svg viewBox="0 0 300 170" focusable="false"><path class="lead-route" pathLength="1" d="M32 84H116M116 84l65-48M116 84l65 48M116 84h130"/><g class="people-nodes"><circle cx="32" cy="84" r="5"/><circle cx="116" cy="84" r="8"/><circle cx="181" cy="36" r="10"/><circle cx="181" cy="132" r="10"/><circle cx="246" cy="84" r="12"/></g><circle class="decision-ring" cx="116" cy="84" r="29"/></svg></div>
+<p class="op-index">03 / Adoption</p><h3>Lead</h3><p>Build the teams, operating models, and alignment that make technical change stick.</p>
+<ul><li>Teams</li><li>Operating models</li><li>Adoption</li><li>Change</li></ul>
 </article>
-</div>
-</section>
-<section class="section enterprise" id="work">
+</div></div></div>
+</section><section class="section enterprise" id="work">
 <div class="shell">
 <div class="section-lead reveal">
 <p class="label">Enterprise impact</p>
@@ -407,5 +385,3 @@
 </script>
 </body>
 </html>
-
-
